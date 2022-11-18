@@ -7,12 +7,15 @@ var pattern = AnsiConsole.Prompt(
         .PageSize(10)
         .MoreChoicesText("[grey](Move up and down to reveal more design patterns)[/]")
         .AddChoices(new[] {
-            "Strategy Pattern"
+            "Strategy Pattern", "Composite Pattern"
         }));
 
 switch (pattern)
 {
     case "Strategy Pattern":
         Examples.StrategyPattern();
+        break;
+    case "Composite Pattern":
+        Examples.CompositePattern();
         break;
 }
